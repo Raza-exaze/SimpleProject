@@ -1,0 +1,75 @@
+<!DOCHTML html>
+<html>
+<head>
+<title>JavaScript Programming Language</title>
+<script>
+function cun()
+{
+var a=document.getElementById("name").value;
+var b=document.getElementById("age").value;
+if(b>=18)
+{
+document.writeln("<html><body style='background-image:linear-gradient(lightgreen,blue)'><center><h1>");
+document.writeln("Welcome To JavaScript Responsible Page");
+document.writeln("</h1><br>");
+document.writeln("<h2 style='color:red'>Now You Are The Dynamic Language Page Side</h2>");
+document.writeln("<br><h1>");
+document.writeln("Welcome To JavaScript:"+a.fontcolor('yellow').toUpperCase());
+document.writeln("</h1></center></body></html>");
+}
+else
+{
+document.writeln("<html><body style='background-image:linear-gradient(yellow,blue)'>");
+document.writeln("<center>");
+document.writeln("<h1>You Are Not Eligible</h1>");
+document.writeln("<br>");
+document.writeln("<h3>");
+document.writeln("Age Is Under 18 :"+b);
+document.writeln("Years Old");	
+document.writeln("</h3>");
+document.writeln("</center>");
+document.writeln("</body></html>");
+}
+}
+</script>
+<style>
+h1,h2,h3
+{
+text-align:center;
+}
+input
+{
+height:35px;
+width:220px;
+border-radius:20px;
+}
+body
+{
+background-image:linear-gradient(lightgreen,yellow);
+}
+#d1
+{
+border-radius:220px;
+}
+input[type="submit"]:hover
+{
+background-color:black;
+color:white;
+}
+</style>
+</head>
+<body>
+<h1>Welcome To JavaScript Responsible Page</h1>
+<h2>How Can I Help You</h2>
+<h3>Please Fill Below Details To Understand Your requirement</h3>
+<h4>I'm JavaScript For only here resolved your Query</h4>
+<h5>Thanks For Using This Advance Technology</h5>
+<form>
+<b><i>*Enter Your Name:</i></b><input type="text" id="name" placeholder="Ex:JavaScript" required><br><br>
+<b><i>*Enter Your Age:</i></b>&nbsp;&nbsp;<input type="text" id="age" placeholder="Ex:22" required><br><br>
+<b>Present Address:</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea cols="20" rows="10">Ex:Hyderabad</textarea><br><br>
+<input type="submit" value="Do Fast" onclick="cun();"/>
+</body>
+</html>
